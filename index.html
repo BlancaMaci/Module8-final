@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Cook Haven - Spaghetti Bolognese Recipe</title>
+    <style>
+        /* General body styling for layout and background */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f4ef; /* Solid beige background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Header styling with neon glow */
+        header {
+            background-color: #a71d31; /* Tomato red */
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-family: 'Georgia', serif;
+            text-shadow: 0 0 6px rgba(255, 105, 180, 0.25), 0 0 10px rgba(255, 105, 180, 0.15); /* Faint neon glow */
+        }
+
+        header h2 {
+            margin: 0.5rem 0;
+            font-size: 1.5rem;
+            font-weight: normal;
+        }
+
+        /* Navigation menu, centered */
+        nav {
+            background-color: #f5e6cc; /* Light cream */
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: #a71d31;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #731321;
+        }
+
+        /* Main content container */
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Section styling for readability */
+        section {
+            background-color: #e8ecef; /* Light gray */
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h3 {
+            color: #a71d31;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            text-align: center; /* Module 3 feedback */
+        }
+
+        /* About section with centered image */
+        #about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 1rem;
+        }
+
+        /* Recipe section with red borders */
+        #recipe ul {
+            list-style-type: disc;
+            margin-left: 2rem;
+        }
+
+        #recipe p {
+            margin: 0.5rem 0;
+            border: 1px solid #cc0000; /* Red border per Module 4 */
+            padding: 0.5rem;
+            border-radius: 5px;
+        }
+
+        .recipe-step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .recipe-step img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-right: 1rem;
+        }
+
+        /* Video section with YouTube-style buttons */
+        #videos p {
+            margin: 0.5rem 0;
+        }
+
+        .video-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .video-item img {
+            width: 120px;
+            height: 90px;
+            border-radius: 10px;
+            margin-right: 1rem;
+        }
+
+        .watch-now-btn {
+            display: inline-block;
+            background-color: #cc0000; /* YouTube red */
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+            margin-left: 1rem;
+        }
+
+        .watch-now-btn:hover {
+            background-color: #a70000;
+            transform: scale(1.05);
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #a71d31;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* Responsive design for mobile */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav a {
+                margin: 0 0.5rem;
+                font-size: 1rem;
+            }
+
+            .container {
+                padding: 0 0.5rem;
+            }
+
+            .recipe-step img, .video-item img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .watch-now-btn {
+                font-size: 0.9rem;
+                padding: 0.4rem 0.8rem;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- Header with title and subtitle -->
+    <header>
+        <h1>Home Cook Haven</h1>
+        <h2>Spaghetti Bolognese Recipe</h2>
+    </header>
+
+    <!-- Navigation menu -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#recipe">Recipe</a>
+        <a href="#videos">Videos</a>
+    </nav>
+
+    <!-- Main content -->
+    <div class="container">
+        <!-- About section with introductory paragraph -->
+        <section id="about">
+            <h3>About Me</h3>
+            <img src="IMAGES/profile.jpg" alt="Blanca Macias Profile">
+            <p>Hi, I'm Blanca Macias! I love cooking hearty, comforting dishes that bring people together. Spaghetti Bolognese is my favorite because its rich, savory flavors and simple ingredients make it perfect for family gatherings. I enjoy adding a personal twist with a hint of fresh herbs to elevate the dish.</p>
+        </section>
+
+
+        <!-- Recipe section with ingredients and steps -->
+        <section id="recipe">
+            <h3>Recipe</h3>
+            <img src="IMAGES/6.jpg" alt="Spaghetti Bolognese Dish" style="width: 100%; border-radius: 10px; margin-bottom: 1rem;">
+            <h4>Ingredients</h4>
+            <ul>
+                <li>400g spaghetti</li>
+                <li>500g ground beef</li>
+                <li>1 onion, finely chopped</li>
+                <li>2 garlic cloves, minced</li>
+                <li>1 carrot, finely chopped</li>
+                <li>1 celery stick, finely chopped</li>
+                <li>400g canned diced tomatoes</li>
+                <li>2 tbsp tomato paste</li>
+                <li>1 cup beef broth</li>
+                <li>1 tsp dried oregano</li>
+                <li>1 tsp fresh basil, chopped</li>
+                <li>Salt and pepper to taste</li>
+                <li>50g Parmesan cheese, grated</li>
+            </ul>
+            <h4>Steps</h4>
+            <div class="recipe-step">
+                <img src="IMAGES/2a.jpg" alt="Cooking beef">
+                <p>Step 1: Heat a large pan over medium heat. Add ground beef and cook until browned, about 5-7 minutes. Drain excess fat.</p>
+            </div>
+            <div class="recipe-step">
+                <img src="IMAGES/3.jpg" alt="Cooking vegetables">
+                <p>Step 2: In the same pan, add onion, garlic, carrot, and celery. Cook until softened, about 5 minutes.</p>
+            </div>
+            <div class="recipe-step">
+                <img src="IMAGES/4a.jpg" alt="Making sauce">
+                <p>Step 3: Stir in tomato paste, diced tomatoes, beef broth, oregano, and basil. Simmer for 20-30 minutes, stirring occasionally. Season with salt and pepper.</p>
+            </div>
+            <div class="recipe-step">
+                <img src="IMAGES/4a.jpg" alt="Boiling pasta">
+                <p>Step 4: Boil spaghetti in a large pot of salted water until al dente, about 8-10 minutes. Drain and set aside.</p>
+            </div>
+            <div class="recipe-step">
+                <img src="IMAGES/6a.jpg" alt="Serving dish">
+                <p>Step 5: Combine spaghetti with the sauce. Serve hot, garnished with Parmesan cheese.</p>
+            </div>
+        </section>
+
+        <!-- Videos section with YouTube link buttons -->
+
+
+        <section id="videos">
+            <h3>Videos</h3>
+            <div class="video-item">
+                <img src="IMAGES/imageVideo1.png" alt="Video thumbnail">
+                <div>
+                    <p><b>1: Quick & Easy Spaghetti Bolognese </b> - Heat the olive oil in a large pan over medium heat. Add the onions and sauté until lightly golden, 2 to 3 minutes. Add the garlic and fry another minute. Add the ground beef; fry until fully cooked and no pink shows at all in the.... </p>
+                    <a href="https://www.youtube.com/watch?v=I47pr0bCijk&pp=ygUYU3BhZ2hldHRpIEJvbG9nbmVzZSBiZWFm" target="_blank" class="watch-now-btn">Watch Now</a>
+                </div>
+            </div>
+            <div class="video-item">
+                <img src="IMAGES/imageVideo2.png" alt="Video thumbnail">
+                <div>
+                    <p><b>Video 2: Classic Bolognese Sauce </b>- Learn three ways to make Classic Bolognese Sauce with instructions for the stovetop, Instant Pot, and slow cooker. This traditional Italian red sauce is savory, rich, and full of flavor.</p>
+                    <a href="https://www.youtube.com/watch?v=6YpJzgLDm24" target="_blank" class="watch-now-btn">Watch Now</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Home Cook Haven by Blanca Macias</p>
+    </footer>
+</body>
+</html>
